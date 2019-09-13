@@ -68,6 +68,7 @@ export default {
           console.log(allData)
           commit('GET_DATA', allData)
         })
+        .catch(error => console.log(error))
     }
   }
 

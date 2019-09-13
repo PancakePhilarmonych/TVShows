@@ -104,9 +104,8 @@ export default {
           transform: scale(0.95)
           background-color: $btn_shadow
     .in_box
-      padding-left: 20px
       text-align: left
-      margin: 15px 10px 0 10px
+      margin: 15px 10px 0 20px
       width: 400px
       height: 500px
       &_title
@@ -126,5 +125,6 @@ export default {
   @media(max-width: 660px)
 
     .in_box
+      margin: 15px 15px  0 15px!important
       text-align: center!important
 </style>

@@ -10,7 +10,7 @@ export default new Vuex.Store({
   },
   state: {
     request_text: '',
-    api: 'http://api.tvmaze.com/search/'
+    api: 'https://api.tvmaze.com/search/'
   },
   getters: {
     request_text (state) {

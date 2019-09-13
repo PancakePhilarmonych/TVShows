@@ -100,6 +100,8 @@ export default {
   display: flex
   justify-content: center
   align-items: center
+  h2
+    transition: 0.3s
 @media(max-width: 660px)
   .empty
     h2
