@@ -41,7 +41,6 @@ export default new Vuex.Store({
   mutations: {
     GET_DATA (state, payload) {
       state.data = payload
-      console.log(payload)
     },
     UPDATE_REQUEST (state, payload) {
       state.request_text = payload
@@ -76,11 +75,9 @@ export default new Vuex.Store({
               default:
                 status = 'Неизвестно'
             }
-            console.log(t.status)
             let update = new Show(t.name, t.language, t.genres, status, t.officialSite, t.rating.average, t.summary, img, t.id)
             allData.push(update)
           })
-          console.log(allData)
           commit('GET_DATA', allData)
         })
         .catch(error => console.log(error))

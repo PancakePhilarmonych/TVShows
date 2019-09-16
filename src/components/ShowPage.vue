@@ -128,7 +128,6 @@ export default {
         text-align: center
         font-weight: lighter
 
-
       &_btn
         display: block
         margin: 0 auto

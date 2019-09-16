@@ -10,7 +10,7 @@
         ПОИСК
       </button>
     </div>
-    <div v-if="this.data.length !== 0" class="wrapper">
+    <div v-if="isEmpty" class="wrapper">
       <div
 
         v-for="i in data"
@@ -34,6 +34,13 @@
 import { mapGetters } from 'vuex'
 export default {
   computed: {
+    isEmpty () {
+      if (this.data.length > 0) {
+        return true
+      } else {
+        return false
+      }
+    },
     ...mapGetters(['request_text', 'data']),
     request: {
       get () {
